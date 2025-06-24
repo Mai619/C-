@@ -1,26 +1,23 @@
 #include<iostream>
- using namespace std;
- int main()
- {
- 	int T,a,b,i,j,k;
- 	cin>>T;
- 	for(i=1;i<=T;i++)
- 	{
- 		cin>>a;
- 		cin>>b;
- 		j=0;
- 		for(a>0;a<=b;a++)
- 		{
- 			if(a%2==1)
- 			{
- 				j=j+a;
-			}
-			else
+using namespace std;
+int main()
+{
+	int a,b,c,d,e;
+	cin>>a;
+	e=1;
+	while(a>=e)
+	{
+		cin>>b>>c;
+		d=0;
+		for(int i=b;i<=c;i++)
+		{
+			if(i%2==1)
 			{
-				j=j+0;
+				d=d+i;
 			}
-		}
-		cout<<"Case"<<i<<" "<<j<<endl;
+		} 
+		cout<<"Case "<<e<<": "<<d<<endl;
 	}
-	return 0;
- }
+	
+return 0;
+}
